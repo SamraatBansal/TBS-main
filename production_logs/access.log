@@ -3,3 +3,8 @@
 [0mGET /static/js/nav.js [33m404[0m 4.382 ms - 155[0m
 [0mGET /static/js/app.js [33m404[0m 0.243 ms - 155[0m
 [0mGET /static/js/nav.js [33m404[0m 0.436 ms - 155[0m
+[0mGET /contact [36m304[0m 11.552 ms - -[0m
+[0mGET /static/js/app.js [33m404[0m 2.939 ms - 155[0m
+[0mGET /static/js/nav.js [33m404[0m 2.024 ms - 155[0m
+[0mGET /static/js/app.js [33m404[0m 0.281 ms - 155[0m
+[0mGET /static/js/nav.js [33m404[0m 0.273 ms - 155[0m
