@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-ExtraBold.eot');
+    src: url('../fonts/Archivo-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Archivo-ExtraBold.woff') format('woff'),
+        url('../fonts/Archivo-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Archivo-ExtraBold.svg#Archivo-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-BoldItalic.eot');
+    src: url('../fonts/Archivo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-BoldItalic.woff') format('woff'),
+        url('../fonts/Archivo-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-BoldItalic.svg#Archivo-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-BlackItalic.eot');
+    src: url('../fonts/Archivo-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-BlackItalic.woff') format('woff'),
+        url('../fonts/Archivo-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-BlackItalic.svg#Archivo-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Bold.eot');
+    src: url('../fonts/Archivo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Bold.woff2') format('woff2'),
+        url('../fonts/Archivo-Bold.woff') format('woff'),
+        url('../fonts/Archivo-Bold.ttf') format('truetype'),
+        url('../fonts/Archivo-Bold.svg#Archivo-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Black.eot');
+    src: url('../fonts/Archivo-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Black.woff2') format('woff2'),
+        url('../fonts/Archivo-Black.woff') format('woff'),
+        url('../fonts/Archivo-Black.ttf') format('truetype'),
+        url('../fonts/Archivo-Black.svg#Archivo-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-ExtraBoldItalic.eot');
+    src: url('../fonts/Archivo-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/Archivo-ExtraBoldItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-ExtraBoldItalic.svg#Archivo-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Italic.eot');
+    src: url('../fonts/Archivo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Italic.woff2') format('woff2'),
+        url('../fonts/Archivo-Italic.woff') format('woff'),
+        url('../fonts/Archivo-Italic.ttf') format('truetype'),
+        url('../fonts/Archivo-Italic.svg#Archivo-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-ExtraLightItalic.eot');
+    src: url('../fonts/Archivo-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/Archivo-ExtraLightItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-ExtraLightItalic.svg#Archivo-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-LightItalic.eot');
+    src: url('../fonts/Archivo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-LightItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-LightItalic.woff') format('woff'),
+        url('../fonts/Archivo-LightItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-LightItalic.svg#Archivo-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Medium.eot');
+    src: url('../fonts/Archivo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Medium.woff2') format('woff2'),
+        url('../fonts/Archivo-Medium.woff') format('woff'),
+        url('../fonts/Archivo-Medium.ttf') format('truetype'),
+        url('../fonts/Archivo-Medium.svg#Archivo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-ExtraLight.eot');
+    src: url('../fonts/Archivo-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Archivo-ExtraLight.woff') format('woff'),
+        url('../fonts/Archivo-ExtraLight.ttf') format('truetype'),
+        url('../fonts/Archivo-ExtraLight.svg#Archivo-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Light.eot');
+    src: url('../fonts/Archivo-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Light.woff2') format('woff2'),
+        url('../fonts/Archivo-Light.woff') format('woff'),
+        url('../fonts/Archivo-Light.ttf') format('truetype'),
+        url('../fonts/Archivo-Light.svg#Archivo-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-MediumItalic.eot');
+    src: url('../fonts/Archivo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-MediumItalic.woff') format('woff'),
+        url('../fonts/Archivo-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-MediumItalic.svg#Archivo-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Regular.eot');
+    src: url('../fonts/Archivo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Regular.woff2') format('woff2'),
+        url('../fonts/Archivo-Regular.woff') format('woff'),
+        url('../fonts/Archivo-Regular.ttf') format('truetype'),
+        url('../fonts/Archivo-Regular.svg#Archivo-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-SemiBold.eot');
+    src: url('../fonts/Archivo-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-SemiBold.woff2') format('woff2'),
+        url('../fonts/Archivo-SemiBold.woff') format('woff'),
+        url('../fonts/Archivo-SemiBold.ttf') format('truetype'),
+        url('../fonts/Archivo-SemiBold.svg#Archivo-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-ThinItalic.eot');
+    src: url('../fonts/Archivo-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-ThinItalic.woff') format('woff'),
+        url('../fonts/Archivo-ThinItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-ThinItalic.svg#Archivo-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-SemiBoldItalic.eot');
+    src: url('../fonts/Archivo-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Archivo-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/Archivo-SemiBoldItalic.ttf') format('truetype'),
+        url('../fonts/Archivo-SemiBoldItalic.svg#Archivo-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Thin.eot');
+    src: url('../fonts/Archivo-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Archivo-Thin.woff2') format('woff2'),
+        url('../fonts/Archivo-Thin.woff') format('woff'),
+        url('../fonts/Archivo-Thin.ttf') format('truetype'),
+        url('../fonts/Archivo-Thin.svg#Archivo-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Medium.eot');
+    src: url('../fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Medium.woff2') format('woff2'),
+        url('../fonts/Manrope-Medium.woff') format('woff'),
+        url('../fonts/Manrope-Medium.ttf') format('truetype'),
+        url('../fonts/Manrope-Medium.svg#Manrope-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Thin.eot');
+    src: url('../fonts/Manrope-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Thin.woff2') format('woff2'),
+        url('../fonts/Manrope-Thin.woff') format('woff'),
+        url('../fonts/Manrope-Thin.ttf') format('truetype'),
+        url('../fonts/Manrope-Thin.svg#Manrope-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Regular.eot');
+    src: url('../fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Regular.woff2') format('woff2'),
+        url('../fonts/Manrope-Regular.woff') format('woff'),
+        url('../fonts/Manrope-Regular.ttf') format('truetype'),
+        url('../fonts/Manrope-Regular.svg#Manrope-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.eot');
+    src: url('../fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff'),
+        url('../fonts/Manrope-Bold.ttf') format('truetype'),
+        url('../fonts/Manrope-Bold.svg#Manrope-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Semibold.eot');
+    src: url('../fonts/Manrope-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Semibold.woff2') format('woff2'),
+        url('../fonts/Manrope-Semibold.woff') format('woff'),
+        url('../fonts/Manrope-Semibold.ttf') format('truetype'),
+        url('../fonts/Manrope-Semibold.svg#Manrope-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Light.eot');
+    src: url('../fonts/Manrope-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Manrope-Light.woff2') format('woff2'),
+        url('../fonts/Manrope-Light.woff') format('woff'),
+        url('../fonts/Manrope-Light.ttf') format('truetype'),
+        url('../fonts/Manrope-Light.svg#Manrope-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

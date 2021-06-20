@@ -1,0 +1,160 @@
+.contact-container {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 70vh;
+	display: flex;
+	width: 100%;
+	padding-top: 1rem;
+	justify-content: space-evenly;
+	max-width:1440px;
+	margin:auto;
+	align-items: center;
+	/* align-items: flex-end; */
+}
+
+.contact-illus-cont {
+	width: 43%;
+}
+.contact-illus {
+	width: 100%;
+	margin: auto;
+	/* max-width: 30rem; */
+}
+
+.user-form {
+	display: flex;
+	/* margin: auto; */
+	justify-content: center;
+	width: 40%;
+	flex-direction: column;
+	font-family: DM Sans;
+	padding: 3rem 0;
+}
+
+.user-form input[type="tel"],
+.user-form input[type="text"],
+.user-form input[type="email"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.intl-tel-input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	font-family: "Inter";
+}
+
+.iti {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0.7rem 0rem;
+	font-family: "Inter";
+}
+
+.user-form input,
+.user-form select,
+textarea {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-border-radius: none;
+	width: 100%;
+	padding: 1rem;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	margin: 0.7rem auto;
+	color: black;
+	font-family: "Inter";
+	outline: none;
+}
+
+.pay-button input {
+	background-color: #202020;
+	color: white;
+}
+
+.submit-query {
+	width: 100%;
+}
+
+.query-submit {
+    display: block;
+	width: 60%;
+	background-color: rgb(0, 16, 163);
+	border-radius: 10px;
+	/* height: 100px; */
+    padding:0.5rem 0;
+	text-align: center;
+	position: absolute;
+	top: 5%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+    cursor: pointer;
+}
+
+/* 
+.hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+} */
+
+@media screen and (max-width: 978px) {
+	.contact-container{
+		flex-direction:column;
+	}
+
+	.contact-illus-cont{
+		width:90%;
+		margin:auto;
+	}
+
+	.user-form{
+		width:90%;
+		margin:0rem auto;
+		order:-1;
+		padding:1rem 0;
+		text-align:center;
+	}
+}

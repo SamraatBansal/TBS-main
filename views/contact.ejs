@@ -1,0 +1,149 @@
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script> -->
+
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+<body>
+
+
+    <nav class="navcontainer blue-nav">
+        <a href="/"><img class="header-logo" src="images/tbs-logo-light.png"></a>
+        <ul class="nav-links">
+            <li><a href="https://learn.theblockchainschool.io/">
+                    <button class="header-btn">
+                        Login / Signup
+                    </button>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="about-us-container">
+        <h1 class="team-heading">Contact Us</h1>
+    </div>
+
+
+
+
+    <div class="blue-container">
+        <div class="contact-container">
+            <div class="contact-illus-cont">
+                <img class="contact-illus" src="images/postbox-new.png">
+
+            </div>
+            <div class="user-form">
+                <form action="/contact_form" method="POST">
+                    <h2>Drop in your query below</h2>
+                    <p>We have high response rate. We will get back to you shortly.</p>
+                    <input name="username" id="username" placeholder="Name" type="text" required>
+                    <input name="useremail" id="useremail" placeholder="Email" type="email" required>
+                    <input id="usercontact" type="tel" name="usercontact" required>
+
+                    <textarea placeholder="Write your query here" id="query-text" name="query" rows="4"></textarea>
+
+                    <!-- <select name="field" id="field" required>
+                        <option value="" disabled selected hidden>What describes you the best?</option>
+                        <option value="student-tech">
+                            <p>Student in Tech Field</p>
+                        </option>
+                        <option value="student-nontech">Student in Non-tech Field</option>
+                        <option value="job-tech">Job in Tech Field</option>
+                        <option value="job-nontech">Job in Non-tech Field</option>
+                    </select>
+    
+                    <select name="prev_know" id="prev_know" required>
+                        <option value="" disabled selected hidden>Do you have previous knowledge around Blockchain?</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select> -->
+
+                    <!-- <select name="info_source" id="info_source" required>
+                        <option value="" disabled selected hidden>Where did you hear about us?</option>
+                        <option value="Machine Learning India">Machine Learning India (MLI)</option>
+                        <option value="Meme Coding">Meme Coding</option>
+                        <option value="TBS Social Media">TBS Social Media</option>
+                        <option value="Ads">Ads</option>
+                        <option value="Friends">Friends</option>
+                        <option value="Other Communities">Other Communities</option>
+                    </select> -->
+
+                    <div class="g-recaptcha" data-sitekey="6LcZNCsbAAAAAKnEucGFf1PJxCFzvqapMy4NtjNz"></div>
+
+                    <button type="submit" class="submit-query">Submit</button>
+
+                    <% if(contact_msg == "success") {%>
+
+                    <div class="query-submit">
+                        <p style="color:white">Query Submitted Successfully</p>
+                    </div>
+
+                    <%} else if(contact_msg == "failed") {%>
+
+                    <div class="query-submit">
+                        <p style="color:white">Failed to submit query. Please try after sometime.</p>
+                    </div>
+
+                    <%}%>
+
+
+
+                    <!-- <p style="text-align: center;">{{contact_msg}}</p> -->
+                    <!-- {% if "{{contact_msg}}" == "success" %}
+                        <h1>Query Successfully Submitted</h1>
+                    {% elif "{{contact_msg}}" == "failed" %}
+                        <h1>Queru Failed. Try after sometime</h1>
+                    {% endif %} -->
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        var ppvar;
+
+        function primaryPhoneDisplay(assignedName) {
+            let countryPhoneNumer = document.querySelector(`input[name="${assignedName}"]`);
+            ppvar = window.intlTelInput(countryPhoneNumer, {
+                separateDialCode: true,
+                initialCountry: "IN",
+                preferredCountries: ["IN"],
+                nationalMode: false,
+                hiddenInput: "full_phone",
+                formatOnDisplay: false,
+                utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/14.0.6/js/utils.js'
+            });
+        }
+
+        primaryPhoneDisplay("usercontact");
+    </script>
+
+
+
+
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

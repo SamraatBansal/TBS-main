@@ -1,0 +1,178 @@
+.blue-nav {
+	background-color: #070059;
+}
+
+.about-us-container {
+	background-color: #070059;
+	min-height: 20vh;
+	display: flex;
+	align-items: center;
+}
+
+.team-container {
+	width: 85%;
+	max-width: 1440px;
+	margin: auto;
+	padding: 5rem 0;
+}
+
+.team-container h1{
+    color: #9936f3;
+    font-size: 2.25rem;
+}
+.team-heading {
+	font-weight: 600;
+	font-size: 3rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 3rem;
+    color:#ebebeb;
+}
+
+.vision-content p{
+	text-justify: inter-word;
+}
+
+.vision-content strong{
+	color:#ebebeb;
+	font-weight: 500;
+}
+
+.vision-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 60vh;
+}
+
+.vision-content {
+	width: 50%;
+}
+
+.vision-img {
+	width: 40%;
+}
+
+.vision-img img {
+	width: 100%;
+}
+
+.card-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	row-gap: 0.5rem;
+	column-gap: 2rem;
+}
+
+.team-card {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1.5rem;
+	background-color: #070059;
+	border-radius: 5px;
+	z-index: 1;
+	margin: 1rem auto;
+	width: 100%;
+}
+
+.team-card:hover{
+	filter: drop-shadow(0px 5px 10px #330b58);
+	transition: all 0.15s ease-in-out;
+}
+
+.team-pic img {
+	width: 12rem;
+	display: flex;
+	border-radius: 10rem;
+	margin: 1rem auto;
+}
+
+.team-images-2 {
+	/* margin-left: 1.5rem; */
+	text-align: center;
+}
+
+.team-name,
+.team-desig {
+	line-height: normal;
+	margin: 0;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.team-name {
+	color: #8e5dff;
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+
+.team-desig {
+	color: #fff;
+	font-size: 1rem;
+}
+
+.team-desc {
+	font-size: 1rem;
+	min-height: 4rem;
+	/* color:#ebebeb; */
+}
+
+.team-socials {
+	width: 8rem;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	margin: auto;
+}
+
+.team-socials a {
+	color: #909cff;
+	margin: 1rem;
+}
+
+.last-row-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.last-row-container .team-card{
+	width: 33%;
+	margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+	.team-heading {
+		font-size: 2rem;
+	}
+
+	.vision-content,
+	.vision-img {
+		width: 100%;
+	}
+
+	.vision-img {
+		order: -1;
+	}
+	.vision-container {
+		flex-direction: column;
+	}
+
+	.card-container {
+		display: grid;
+		grid-template-columns: auto;
+		row-gap: 0.5rem;
+		column-gap: 2rem;
+	}
+
+	.team-container h1{
+		text-align: center;
+	}
+
+
+}

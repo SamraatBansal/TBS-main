@@ -1,0 +1,5 @@
+[0mPOST /contact_form [32m200[0m 21.935 ms - 10325[0m
+[0mGET /static/js/app.js [33m404[0m 2.099 ms - 155[0m
+[0mGET /static/js/nav.js [33m404[0m 4.382 ms - 155[0m
+[0mGET /static/js/app.js [33m404[0m 0.243 ms - 155[0m
+[0mGET /static/js/nav.js [33m404[0m 0.436 ms - 155[0m

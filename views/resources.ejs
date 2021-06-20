@@ -1,0 +1,139 @@
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/resources.css">
+
+
+<body>
+
+    <nav class="navcontainer blue-nav">
+        <a href="/"><img class="header-logo" src="images/tbs-logo-light.png"></a>
+        <ul class="nav-links">
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#community">Community</a></li> -->
+            <li><a href="https://learn.theblockchainschool.io/">
+                    <button class="header-btn">
+                        Login / Signup
+                    </button>
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+    <div class="res-outer-container">
+        <h1 class="team-heading">The best collection of Blockchain Resources</h1>
+    </div>
+
+    <div class="white-container">
+
+
+        <div class="content-container">
+            <!-- <h2 class="content-heading">What even is blockchain?</span></h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, commodi esse. Nam fugiat impedit
+                perspiciatis rerum assumenda minus repudiandae reprehenderit saepe enim porro, repellendus recusandae
+                aspernatur velit cumque nostrum delectus sequi obcaecati fuga, tempora qui minima. Laborum veniam error
+                quasi.
+            </p> -->
+
+            <h2 class="content-heading">Curated Resources by us</span></h2>
+            <p class="content-para">These resources are a good place to start learning about Blockchain, Cryptocurrency and various concepts related to them.</p>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <input id="searchBox" type="text" name="content-search" class="form-control" onkeyup="search()" placeholder="Search for keywords here...">
+                    <!-- <button class="search-btn">
+                    </button> -->
+                </div>
+                <!-- <div class="filters">
+                    <i class="fas fa-filter"></i>
+                </div> -->
+
+            </div>
+
+            <div class="keyword-container">
+                <h3 class="pop-keywords">Popular Keywords</h3>
+                <div class="myBtnContainer" id="myBtnContainer">
+                    <button class="btnres active" onclick="filterSelection('all')"> All</button>
+                    
+                    <% for(cat of all_categories) { %>
+                        <button class="btnres" onclick="filterSelection('<%= cat %>')"> <%= cat %></button>
+                <%}%>
+    
+                    <!-- 
+                    <button class="btnres" onclick="filterSelection('Cryptocurrency')"> Cryptocurrency</button>
+                    <button class="btnres" onclick="filterSelection('Ethereum')">Ethereum</button>
+                    <button class="btnres" onclick="filterSelection('Smart-Contracts')">Smart contracts</button>
+                    <button class="btnres" onclick="filterSelection('Blockchain')">Blockchain</button>
+                    <button class="btnres" onclick="filterSelection('Decentralisation')">Decentralisation</button>
+                    -->
+                
+                </div>
+            </div>
+         
+
+            <div class="res-container" id="res-container">
+                <% for(i of response) { %>
+                  <%  var categoryArray = i.fields.Category; %>
+                  <% for(t of categoryArray) { %>
+                <div class="res-card <%= t %>  <%= i.fields.Tags%>">
+                    <%}%>
+                    <div class="res-card-top" style="background: url(<%= i.fields.Image[0].thumbnails.full.url %>) no-repeat center center; background-size:cover">
+                    
+                        <div class="tag-container">
+
+                            <div class="tag">
+                                <a><%= t%></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="res-card-bottom">
+                        <p class="level"><%= i.fields.Tags %></p>
+                        <h3 class="title"><%= i.fields.Title %></h3>
+                        <p class="author"><%= i.fields.Author %></p>
+                        <p class="summary"><%= i.fields.Summary %></p>
+
+                        <a href="<%= i.fields.Link %>" target="_blank">
+                            <button class="res-btn">Explore</button>
+                        </a>
+                    </div>
+                        
+                </div> 
+                <%}%>
+            </div>
+            
+
+            
+            
+
+            <div id="not-found" class="not-found">
+                <div class="not-container">
+                    <img src="images/sad_search.png">
+                    <p>Oops! No results found. <br> Try searching for article or author names instead.</p>    
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <a>{{response}}</a> -->
+    </div>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script> -->
+    <!-- <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/nav.js"></script>
+    <script src="js/resources.js"></script>
+
+
+</body>
+
+</html>
