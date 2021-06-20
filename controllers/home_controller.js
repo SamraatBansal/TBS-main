@@ -2,6 +2,7 @@
 const queue = require('../config/kue');
 const emailMailer = require('../mailers/contact_query_mailer');
 const emailVerificationWorker = require('../workers/contact_query_worker');
+const env = require("../config/environment.js");
 
 module.exports.home = function(req, res){
     
@@ -45,6 +46,7 @@ module.exports.contact = function(req, res){
     
     return res.render('contact',{
         title: "Contact | The Blockchain School",
-        contact_msg: "NULL"
+        contact_msg: "NULL",
+        recaptcha: env.google_recaptcha_dateSiteKey
     })
 }
