@@ -3,13 +3,13 @@ const rfs = require('rotating-file-stream');
 const path = require('path');
 
 
-const logDirectory = path.join(__dirname, '../production_logs');
-fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+// const logDirectory = path.join(__dirname, '../production_logs');
+// fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 
-const accessLogStream = rfs.createStream('access.log', {
-    interval: '1d',
-    path: logDirectory
-});
+// const accessLogStream = rfs.createStream('access.log', {
+//     interval: '1d',
+//     path: logDirectory
+// });
 
 
 
@@ -26,10 +26,10 @@ const development = {
     google_recaptcha_dateSiteKey: "6LcZNCsbAAAAAKnEucGFf1PJxCFzvqapMy4NtjNz",
     // google_call_back_url: "http://localhost:8000/users/auth/google/callback",
     // jwt_secret: 'codeial',
-    morgan: {
-        mode: 'dev',
-        options: {stream: accessLogStream}
-    }
+    // morgan: {
+    //     mode: 'dev',
+    //     options: {stream: accessLogStream}
+    // }
 }
 
 
@@ -44,10 +44,10 @@ const production =  {
     google_redirect_url: process.env.TBS_GOOGLE_REDIRECT_URL,
     google_refresh_token: process.env.TBS_GOOGLE_REFRESH_TOKEN,
     google_recaptcha_dateSiteKey: process.env.TBS_GOOGLE_RECAPTCHA_KEY,
-    morgan: {
-        mode: 'combined',
-        options: {stream: accessLogStream}
-    }
+    // morgan: {
+    //     mode: 'combined',
+    //     options: {stream: accessLogStream}
+    // }
 }
 
 

@@ -29,7 +29,7 @@ app.use(express.urlencoded({extended: false}));
 //Using the middleware parser 
 app.use(express.static(env.asset_path)); //To access the css and js files used in views placed in assets
 // app.use('/uploads', express.static(__dirname + '/uploads'));
-app.use(logger(env.morgan.mode, env.morgan.options));
+// app.use(logger(env.morgan.mode, env.morgan.options));
 app.use(expressLayout);
 app.set('layout extractStyles', true);
 app.set('layout extractScripts', true);
