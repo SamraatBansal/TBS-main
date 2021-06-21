@@ -23,7 +23,7 @@ const development = {
     google_client_secret: "zDcHEIgtDyc-fJtCFUYM_GGH",
     google_redirect_url: "https://developers.google.com/oauthplayground",
     google_refresh_token: "1//043NIDmwe9C9VCgYIARAAGAQSNwF-L9IrvpLvqPa_D--h6CjcwKc7LYw6x9FzyC4eIn6WJGaq9f3U3UR4oY7LKb4aW_6oDAwp1gk",
-    google_recaptcha_dateSiteKey: "6LcZNCsbAAAAAKnEucGFf1PJxCFzvqapMy4NtjNz",
+    // google_recaptcha_dateSiteKey: "6LcZNCsbAAAAAKnEucGFf1PJxCFzvqapMy4NtjNz",
     // google_call_back_url: "http://localhost:8000/users/auth/google/callback",
     // jwt_secret: 'codeial',
     // morgan: {

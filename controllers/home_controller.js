@@ -46,7 +46,6 @@ module.exports.contact = function(req, res){
     
     return res.render('contact',{
         title: "Contact | The Blockchain School",
-        contact_msg: "NULL",
-        recaptcha: env.google_recaptcha_dateSiteKey
+        contact_msg: "NULL"
     })
 }
