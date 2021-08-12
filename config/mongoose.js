@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 const env = require('../config/environment')
 // const mongoURI = "mongodb+srv://samraat:Samraat@7@cluster0.uxnjj.mongodb.net/hiring_block_db?retryWrites=true&w=majority";
 // mongoose.connect('mongodb://localhost/waitlist_db', {useNewUrlParser: true});
-mongoose.connect(env.db, {useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect(env.db, {useNewUrlParser: true,useUnifiedTopology: true,
+    useCreateIndex: true, });
 // // mongoURI || 
 // // || 'mongodb://localhost/hiring_block_db'
 const db = mongoose.connection;

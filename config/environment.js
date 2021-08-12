@@ -17,7 +17,7 @@ const development = {
     name: 'development',
     asset_path: 'static',
     // session_cookie_key: 'blahsomething',
-    db: 'mongodb+srv://anmol:anmol123@cluster0.myzqs.mongodb.net/',
+    db: 'mongodb+srv://alphaUser:123@tbs-dashboard-test.2euj8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     db_uri: "mongodb+srv://anmol:anmol123@cluster0.myzqs.mongodb.net/keepAlive=true&poolSize=30&autoReconnect=true&socketTimeoutMS=360000&connectTimeoutMS=360000?ssl=true&ssl_cert_reqs=CERT_NONE",
     google_client_id: "1057271008763-fik1k4g2kl5man96m96qai4hf0ubt0ol.apps.googleusercontent.com",
     google_client_secret: "zDcHEIgtDyc-fJtCFUYM_GGH",
