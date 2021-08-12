@@ -2,13 +2,13 @@ const nodeMailer = require('../config/nodemailer');
 
 
 // this is another way of exporting a method
-exports.newQuery = (user) => {
-    let htmlString = nodeMailer.renderTemplate({user: user}, '/contact_query_mailer.ejs');
+exports.newRegistration = (user) => {
+    let htmlString = nodeMailer.renderTemplate({user: user}, '/registration_mailer.ejs');
     console.log(user);
     nodeMailer.transporter.sendMail({
-       from: ' Query <hello@theblockchainschool.io>',
-       to: 'asktheblockchainschool@gmail.com',
-       subject: "New Query is Recieved ",
+       from: ' Saurabh | TBS <hello@theblockchainschool.io>',
+       to: user.email,
+       subject: "Registration Successful",
        html: htmlString
     }, (err, info) => {
         if (err){

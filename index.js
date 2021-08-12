@@ -69,6 +69,14 @@ app.set('views', './views');
 
 app.use('/', require('./routes')); 
 
+app.use(function(req, res, next) {
+    res.status(404);
+    // res.send('404: File Not Found');
+    return res.render('error', {
+        title: "Error"
+    })
+});
+
 
 app.listen(port, function(err){
     if(err)

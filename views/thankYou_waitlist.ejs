@@ -1,0 +1,115 @@
+
+
+    <link rel="icon" href="/images/title-icon.png" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/layout_db.css"> -->
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/waitlist.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</head>
+
+<body class="index-body">
+
+    <div id="waitlist-container" class="waitlist-container">
+        <!-- <img class="mesh-bg" src="images/mesh-bg.svg"> -->
+        
+        <div class="reset-pass">
+
+            <header>
+                <div class="header-logo">
+                    <!-- <img src="images/logo-new.png"> -->
+                </div>
+
+                <!-- <a href="dashboard.html"><h3><i class="fas fa-angle-left "></i> Back to dashboard</h3></a> -->
+
+
+            </header>
+
+            <div class="promo-text-container">
+                <img class="top-img" src="/images/main.svg" alt="">
+                <img class="top-img-2" src="/images/main-2.svg" alt="">
+
+                <!-- <h1 class="text-head">Polygon x The Blockchain School</h1> -->
+                <!-- <p>The Blockchain School brings you the best content to get started with Polygon ecosystem. It's our birthday and we
+                    have decided to gift you a curated content after toiling in days & nights. We are really
+                    excited to onboard you on this journey. 🤩<br> Subscribe to the waitlist to be one of the first to get access.</p> -->
+
+            </div>
+
+            <div class="success-container">
+                <p class="success-heading">You have successfully registered for early access 💐</p>
+
+                <div class="refer-container">
+                    <p class="refer-heading">Break the queue for early invite by referring 3 or more friends/colleagues</p>
+
+                    <p class="refer-subheading">This course on Polygon is exclusive, driven with incentives in $MATIC; you don't want to miss it! Plus its always fun
+                    with friends around you!</p>
+                        
+                        <div id="copied-message" class="copied-message">
+                            <span>Copied to clipboard</span>
+                        </div>
+
+
+                        <div class="link-input">
+                           
+                            <a id="link-url" class="link-url">theblockchainschool.io/waitlist/<%=code%></a>
+                            <div class="copy-btn">
+                                <i class="fas fa-link" onclick="showCopiedMessage()"></i>
+                            </div>
+                        </div>
+                        
+                        <p>Share your referral directly on these channels</p>
+                        <div class="alternate-options">
+                            <div class="platforms">
+                                <img src="/images/twitter.svg">
+                                <img src="/images/whatsapp.svg">
+                            </div>
+                        </div>
+                        
+                        <a class="info-link" href="https://theblockchainschool.notion.site/Learn-Earn-Road2Polygon-9361e029108d4e87ba3d744806a14aa6">Know more about how this works <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="/js/waitlist.js"></script>
+    <script>
+        function showCopiedMessage() {
+            document.getElementById("copied-message").style.display = "inline";
+            setTimeout(function () {
+                document.getElementById('copied-message').style.display = 'none'
+            }, 2000);
+
+            var aux = document.createElement("input");
+
+            // Get the text from the element passed into the input
+            aux.setAttribute("value", document.getElementById("link-url").innerHTML);
+
+            // Append the aux input to the body
+            document.body.appendChild(aux);
+
+            // Highlight the content
+            aux.select();
+
+            // Execute the copy command
+            document.execCommand("copy");
+
+            // Remove the input from the body
+            document.body.removeChild(aux);
+
+            return false
+        }
+    </script>
+    
+
+</body>
+
+</html>

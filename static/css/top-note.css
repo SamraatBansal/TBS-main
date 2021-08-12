@@ -1,0 +1,30 @@
+
+.top-note {
+	width: 100%;
+	/* background-color: #501b80; */
+	background-color: #9936f3;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+}
+
+.top-note p {
+	margin:0.5rem;
+	color: white;
+	font-size: 0.9rem;
+	font-weight:500;
+}
+
+.top-note i{
+	margin-left: 0.3rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+	.top-note p{
+		font-size:0.75rem;
+	}
+}

@@ -1,0 +1,142 @@
+
+    <link rel="icon" href="/images/title-icon.png" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/layout_db.css"> -->
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/waitlist.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+<body class="index-body">
+
+    <div id="waitlist-container" class="waitlist-container">
+        <div class="reset-pass">
+            
+            <header>
+                <div class="header-logo">
+                    <img src="/images/logo-new.png">
+                </div>
+                
+                <!-- <a href="dashboard.html"><h3><i class="fas fa-angle-left "></i> Back to dashboard</h3></a> -->
+
+
+            </header>
+
+            <div class="promo-text-container">
+                <!-- <h1 class="text-head">Polygon x The Blockchain School</h1> -->
+                <img class="top-img" src="/images/main.svg" alt="">   
+                <img class="top-img-2" src="/images/main-2.svg" alt="">   
+
+                <p>Guess what? It's our Birthday 🎉 Come celebrate it with us :)</p>
+                <p style="font-size: 1.5rem; font-weight: 600; color:white">Here's a brand new course on - Get started w/ Polygon Ecosystem.</p>
+                <p>It's Invite-only (for now) & we are excited to onboard you on this journey of #Road2Polygon 🤩🚀
+                    <br>
+                    Join the waitlist to be one of the first to access - Polygon one of its kind ed-series + our newly created learning
+                    platform.
+                </p>
+
+                <p style="font-size: 1.25rem; font-weight: 500; color:white">P.S Early access also lets you earn Crypto Rewards 🤑</p>
+
+            </div>
+            <form class="input-container" id="enter-email" action="/waitlist-form/registration" method="POST" > 
+                <!-- <h2>Change Password</h2> -->
+                
+                <label for="waitlist-name">Enter Full Name                
+                </label> 
+                <input name="name" id="waitlist-name" type="text" placeholder="Satoshi Nakamoto" required>
+                
+                
+                <label for="waitlist-email">Enter your email                
+                </label> 
+                <input name="email" id="waitlist-email" type="email" placeholder="hello@theblockchainschool.io" required>
+
+                <label for="waitlist-contact">Phone Number</label>
+                <input id="waitlist-contact" type="tel" name="waitlist-contact" required>
+                
+                <label style="margin-top:1rem" for="blockchain-rating">What is your understanding of blockchain on a scale of 1-10?</label>
+                <select name="understandingLevel" id="blockchain-rating" required>
+                    <option value="" disabled selected required>Select a number from the dropdown</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <label style="margin-top:1rem" for="field">What describes you best?</label>
+                <select name="field" id="field" required>
+                    <option value="" disabled selected required>Select an option from the dropdown</option>
+                    <option value="Student in Tech Field">Student in Tech Field</option>
+                    <option value="Student in Non-Tech Field">Student in Non-Tech Field</option>
+                    <option value="Job in Tech & related Services">Job in Tech & related Services</option>
+                    <option value="Employed in Non-tech Field">Employed in Non-tech Field</option>
+                </select>
+
+                <label style="margin-top:1rem" for="polygon-knowledge">Do you have knowledge of Polygon (previously Matic) apart from being an investment option?</label>
+                <select name="polygonKnowledge" id="polygon-knowledge" required>
+                    <option value="" disabled selected required>Select an option from the dropdown</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <%if(code){%>
+                    <label for="referral-code">Enter the 8-digit referral code (if any)</label>
+                    <input style="background-color: rgb(238, 238, 238);" name="referrer" id="referral-code" type="text" value="<%=code%>" readonly>
+                <%}else{%>  
+                    <label for="referral-code">Enter the 8-digit referral code (if any)</label>
+                    <input name="referrer" id="referral-code" placeholder="TBS-M4T1C" type="text">
+                <%}%>
+                <!-- <input name="reset-email" id="reset-email" type="email" required> -->
+
+                <div class="form-btn-container">
+                    <button type="submit" onclick="openDiv('open-modal-check')" class="form-btn primary-btn">Let me in!</button>
+                </div>
+            </form>
+            
+
+        
+
+        </div>
+
+
+
+    </div>
+
+    <script src="/js/waitlist.js"></script>
+    <script>
+        var ppvar;
+
+        function primaryPhoneDisplay(assignedName) {
+            let countryPhoneNumer = document.querySelector(`input[name="${assignedName}"]`);
+            ppvar = window.intlTelInput(countryPhoneNumer, {
+                separateDialCode: true,
+                initialCountry: "IN",
+                preferredCountries: ["IN"],
+                nationalMode: true,
+                hiddenInput: "full_phone",
+                formatOnDisplay: false,
+                utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/14.0.6/js/utils.js'
+            });
+        }
+
+        primaryPhoneDisplay("waitlist-contact");
+    </script>
+
+
+    <!-- </div> -->
+
+
+</body>
+
+</html>
