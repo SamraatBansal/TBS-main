@@ -552,6 +552,8 @@ select:focus {
 	}
 	.index-body {
 		background-size: 300%;
+		background: none;
+		background-color: #6B11CB;
 	}
 }
 
@@ -559,5 +561,13 @@ select:focus {
 @media screen and (max-width: 600px) {
 	.index-body {
 		background-size: 510%;
+	}
+	.copy-btn {
+		padding: 1rem 0.5rem;
+	}
+
+	.link-url {
+		font-size: 0.8rem;
+		padding-left: 1rem;
 	}
 }
