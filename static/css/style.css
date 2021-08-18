@@ -546,12 +546,13 @@ button.glide__arrow {
 
 
 .banner-container{
-	display: flex;
+	/* display: flex; */
 	margin: 2rem auto;
 }
 
 .banner-container img{
 	width: 100%;
+	margin: auto;
 }
 
 .three-pillars .feature-card {
