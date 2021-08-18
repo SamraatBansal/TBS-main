@@ -57,6 +57,15 @@
 	width: 100%;
 }
 
+.banner-container{
+	display: flex;
+	margin: 2rem auto;
+}
+
+.banner-container img{
+	width: 100%;
+}
+
 .card-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
