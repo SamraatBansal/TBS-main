@@ -546,6 +546,8 @@ button.glide__arrow {
 
 
 .banner-container{
+	width: 90%;
+	max-width: 1440px;
 	/* display: flex; */
 	margin: 2rem auto;
 }
