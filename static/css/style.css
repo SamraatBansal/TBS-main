@@ -537,6 +537,17 @@ button.glide__arrow {
 	width: 33.3%;
 	margin: 2rem 1rem;
 }
+
+
+.banner-container{
+	display: flex;
+	margin: 2rem auto;
+}
+
+.banner-container img{
+	width: 100%;
+}
+
 .three-pillars .feature-card {
 	background-color: #000;
 	margin-top: 1.5rem;
