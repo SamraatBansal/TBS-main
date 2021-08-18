@@ -344,6 +344,12 @@
 	margin: auto;
 }
 
+.trailer-container {
+	width: 80%;
+	margin: auto;
+	padding: 4rem 0;
+}
+
 .programs-container,
 .mentors-container {
 	-moz-box-sizing: border-box;
