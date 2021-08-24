@@ -33,12 +33,12 @@ module.exports.registration = async function(req, res){
           }
           user.referralCode = code;
           user.save();
-//           let job = queue.create('registrationEmail', user).save(function(err){
-//             if (err){
-//                 console.log('Error in sending to the queue', err);
-//             }
-//             console.log('job enqueued', job.id);
-//         });
+          let job = queue.create('registrationEmail', user).save(function(err){
+            if (err){
+                console.log('Error in sending to the queue', err);
+            }
+            console.log('job enqueued', job.id);
+        });
           let referrer = await Waitlist.findOne({referralCode: req.body.referrer.toUpperCase() });
           if(referrer){
               referrer.referrals.push(user);
