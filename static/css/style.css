@@ -345,9 +345,10 @@
 }
 
 .trailer-container {
-	width: 80%;
-	margin: auto;
+	width: 80vw;
+	height: auto;
 	padding: 4rem 0;
+	margin: auto;
 }
 
 .programs-container,

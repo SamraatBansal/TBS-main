@@ -19,8 +19,8 @@ router.get('/resources', resourceController.resources);
 // router.get('/waitlist/:code', waitlistController.waitlist);
 // router.get('/waitlist', waitlistController.waitlist);
 // router.post('/waitlist-form/registration', waitlistController.registration )
-//waitlist end
 // router.post('/waitlist-from/registration/:code', waitlistController.referralRegistration)
+//waitlist end
 
 
 
