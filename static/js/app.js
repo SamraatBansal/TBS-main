@@ -33,8 +33,8 @@ function abc() {
 		prefix: "",
 	};
 	
-	var demo1 = new CountUp("number1", 0, 15000, 0, 1.5, options1);
-	var demo2 = new CountUp("number2", 0, 10000, 0, 1.5, options1);
+	var demo1 = new CountUp("number1", 0, 25000, 0, 1.5, options1);
+	var demo2 = new CountUp("number2", 0, 15000, 0, 1.5, options1);
 	var demo3 = new CountUp("number3", 0, 30, 0, 1.5, options1);
 	var demo4 = new CountUp("number4", 0, 60000, 0, 1.5, options2);
 	demo1.start();
