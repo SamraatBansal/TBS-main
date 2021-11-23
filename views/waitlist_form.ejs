@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/css/waitlist.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
@@ -30,18 +31,16 @@
 
             <div class="promo-text-container">
                 <!-- <h1 class="text-head">Polygon x The Blockchain School</h1> -->
-                <img class="top-img" src="/images/main.svg" alt="">   
-                <img class="top-img-2" src="/images/main-2.svg" alt="">   
+                <img class="top-img" src="/images/new-top.svg" alt="">   
+                <img class="top-img-2" src="/images/new-top-2.svg" alt="">   
 
-                <p>Guess what? It's our Birthday Month 🎉 Come celebrate it with us :)</p>
-                <p style="font-size: 1.5rem; font-weight: 600; color:white">Here's a brand new course on Polygon Ecosystem.</p>
-                <p>It's Invite-only (for now) & we are excited to onboard you on this journey of #Road2Polygon 🤩🚀</p>
-                    <p>
-                    Join the waitlist to be one of the first to access - Polygon one of its kind ed-series + our newly created learning
+                <p style="font-size: 1.5rem; font-weight: 600; color:#3a135d">Here's a brand new course on - Get started w/ NEAR Ecosystem.</p>
+                <p>It's Invite-only (for now) & we are excited to onboard you on this journey of #Road2NEAR 🤩🚀
+                    <br>Join the waitlist to be one of the first to access - NEAR one of its kind ed-series + our newly created learning
                     platform.
                 </p>
 
-                <p style="font-size: 1.25rem; font-weight: 500; color:white">P.S Early access also lets you earn Crypto Rewards 🤑</p>
+                <p style="font-size: 1.25rem; font-weight: 500; color:#3a135d">P.S Early access also lets you earn Crypto Rewards 🤑</p>
 
             </div>
             <form class="input-container" id="enter-email" action="/waitlist-form/registration" method="POST" > 
@@ -95,11 +94,13 @@
                     <input style="background-color: rgb(238, 238, 238);" name="referrer" id="referral-code" type="text" value="<%=code%>" readonly>
                 <%}else{%>  
                     <label for="referral-code">Enter the 8-digit referral code (if any)</label>
-                    <input name="referrer" id="referral-code" placeholder="TBS-M4T1C" type="text">
+                    <input name="referrer" id="referral-code" placeholder="TBS-$NEAR" type="text">
                 <%}%>
                 <!-- <input name="reset-email" id="reset-email" type="email" required> -->
 
+                <div class="g-recaptcha" data-sitekey="6LcZNCsbAAAAAKnEucGFf1PJxCFzvqapMy4NtjNz"></div>
                 <div class="form-btn-container">
+
                     <button type="submit" onclick="openDiv('open-modal-check')" class="form-btn primary-btn">Let me in!</button>
                 </div>
             </form>

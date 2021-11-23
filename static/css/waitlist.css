@@ -42,7 +42,7 @@ body {
 
 .index-body {
 	/* background-color: blue; */
-	background: url("../images/new-bg-2.svg");
+	background: url("../images/bg.svg");
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -73,7 +73,7 @@ li {
 
 body a {
 	text-decoration: none;
-	color: #7a83b1;
+	color: #3a135d;
 	font-size: 1rem;
 	width: 100%;
 	font-family: "DM Sans";
@@ -94,7 +94,7 @@ button {
 }
 
 button a {
-	color: #e8e4ee;
+	color: #3a135d;
 }
 
 .container {
@@ -122,8 +122,8 @@ button a {
 .form-btn {
 	margin: 1rem 0rem;
 	padding: 1rem 2rem;
-	background-color: rgb(232, 232, 255);
-	color: rgb(130, 130, 219);
+	background-color: #3a135d;
+	color: rgb(232, 232, 255);
 	border-radius: 5px;
 	height: 3.5rem;
 	width: auto;
@@ -206,7 +206,6 @@ button a {
 
 .top-img {
 	width: 50rem;
-	margin-bottom: 1rem;
 }
 
 .top-img-2 {
@@ -259,7 +258,7 @@ label {
 .input-container {
 	display: flex;
 	flex-direction: column;
-	background-color: rgb(245, 245, 248);
+	background-color: rgb(247, 247, 255);
 	/* background-color: #A94FFB; */
 	border-radius: 5px;
 	width: 30rem;
@@ -267,7 +266,7 @@ label {
 	margin-top: 3rem;
 	/* margin-bottom: 10rem; */
 	padding: 2rem 2rem;
-	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .input-container label {
@@ -334,14 +333,14 @@ select:focus {
 
 .promo-text-container p {
 	font-size: 1.125rem;
-	color: #fdfdfd;
+	color: #3a135d;
 	/* line-height: 170%; */
 }
 
 .promo-text-container h1 {
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
-	color: #fefefe;
+	color: #3a135d;
 	font-size: 2.5rem;
 }
 
@@ -389,10 +388,13 @@ select:focus {
 	/* margin-top: 0.5rem;
 	margin-bottom: 0rem; */
 	color: black;
-	/* font-family: "Inter", sans-serif; */
+	/* font-family: "DM Sans", sans-serif; */
 }
 
 .success-container {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(245, 245, 248);
@@ -404,7 +406,7 @@ select:focus {
 	/* margin-bottom: 10rem; */
 	padding: 1.5rem 2.5rem;
 	padding-bottom: 2rem;
-	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .success-heading {
@@ -497,7 +499,7 @@ select:focus {
 .copied-message {
 	display: none;
 	padding: 0.5rem 2rem;
-	position: fixed;
+	position: absolute;
 	top: 1rem;
 	background-color: rgb(168, 150, 245);
 	border-radius: 2px;
@@ -506,7 +508,6 @@ select:focus {
 	font-family: "DM Sans";
 }
 
-
 .alternate-options {
 	text-align: center;
 	margin-bottom: 1.5rem;
@@ -514,7 +515,7 @@ select:focus {
 
 .platforms {
 	display: flex;
-	width: 180px;
+	width: 300px;
 	margin: auto;
 	justify-content: space-evenly;
 }
@@ -529,6 +530,41 @@ select:focus {
 	transform: scale(1.05);
 }
 
+/*Downloaded from https://www.codeseek.co/flamekuchen/floating-discord-button-Wdmayr */
+.floating-btn {
+	color: white;
+	background: #7289da;
+	border-color: #7289da;
+	position: relative;
+	font-size: 2.6rem;
+	width: 20rem;
+	height: auto;
+	border-radius: 5.2rem 5.2rem;
+	padding: 0.2rem 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+
+}
+
+.floating-btn i {
+	font-size: 28px;
+	margin-right: 1rem;
+}
+.floating-btn p {
+	color: white;
+	font-weight: 600;
+}
+
+.floating-btn:hover {
+	transform: scale(1.02);
+	transition: all 0.2s ease-in-out;
+}
+
+.discord-container{
+	min-height: 20rem;
+}
 @media screen and (max-width: 768px) {
 	.input-container {
 		margin: 0 auto;
@@ -544,31 +580,32 @@ select:focus {
 		/* width: 50rem; */
 	}
 
+	.promo-text-container {
+		margin: auto;
+		width: 95%;
+	}
 	.top-img-2 {
-		display: inline-block;
-		width: 20rem;
+		display: block;
+		width: 90%;
+		max-width: 18rem;
+		margin: auto;
 	}
 	.success-container {
-		width: 70%;
+		width: 95%;
+		padding: 2rem 1rem;
 	}
 	.index-body {
 		background-size: 300%;
-		background: none;
-		background-color: #6B11CB;
+	}
+	.floating-btn p {
+		color: white;
+		font-size: 500;
+		font-size: 0.9rem;
 	}
 }
-
 
 @media screen and (max-width: 600px) {
 	.index-body {
 		background-size: 510%;
-	}
-	.copy-btn {
-		padding: 1rem 0.5rem;
-	}
-
-	.link-url {
-		font-size: 0.8rem;
-		padding-left: 1rem;
 	}
 }

@@ -15,10 +15,14 @@ router.get('/resources', resourceController.resources);
 
 // router.get('/referral/:code', waitlistController.referral);
 
+
+router.get('/learn-and-earn/near', waitlistController.landing);
+
 // Waitlist
-// router.get('/waitlist/:code', waitlistController.waitlist);
-// router.get('/waitlist', waitlistController.waitlist);
-// router.post('/waitlist-form/registration', waitlistController.registration )
+router.get('/learn-and-earn/near/waitlist/:code', waitlistController.waitlist);
+router.get('/learn-and-earn/near/waitlist', waitlistController.waitlist);
+router.post('/waitlist-form/registration', waitlistController.registration )
+
 // router.post('/waitlist-from/registration/:code', waitlistController.referralRegistration)
 //waitlist end
 

@@ -26,7 +26,7 @@ const development = {
     sendgrid_api_key: "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",
     mongo_user:"samraat",
     mongo_pass:"Samraat@TBS2021"
-    // google_recaptcha_dateSiteKey: "6LcZNCsbAAAAAKnEucGFf1PJxCFzvqapMy4NtjNz",
+    // google_recaptcha_dateSecretKey: "6LcZNCsbAAAAADnNcU2FECVfV0LvYbvOuMPFBoDk",
     // google_call_back_url: "http://localhost:8000/users/auth/google/callback",
     // jwt_secret: 'codeial',
     // morgan: {
