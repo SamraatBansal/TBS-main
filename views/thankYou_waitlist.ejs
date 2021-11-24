@@ -48,13 +48,14 @@
                         with friends around you!</p>
                         
                         <div id="copied-message" class="copied-message">
-                            <span>Copied to clipboard</span>
+                            <span>Copied Link to clipboard</span>
                         </div>
 
 
                         <div class="link-input">
                            
-                            <a id="link-url" class="link-url">theblockchainschool.io/nearprogram/waitlist/<%=code%></a>
+                            <a id="link-url" class="link-url"><%=code%></a>
+                            <a id="link-url-hidden" class="link-url-hidden">theblockchainschool.io/nearprogram/waitlist/<%=code%></a>
                             <div class="copy-btn">
                                 <i class="fas fa-link" onclick="showCopiedMessage()"></i>
                             </div>
@@ -66,9 +67,15 @@
                                 <a target="__blank" href="https://twitter.com/intent/tweet?text=Wohoo%20%F0%9F%8E%89%20%40theblockchainsc%20turns%202%20this%20month%20%F0%9F%A4%A9%0A%0AJust%20registered%20for%20their%20invite-only%20course%20on%20Polygon%20%2B%20Platform%20launch%20%F0%9F%9A%80%20%0A%0ACome%20join%20in%3A%20theblockchainschool.io%2Fwaitlist%2F<%=code%>%0A%0A%23Road2Polygon%20%23TBSTurns2%20%E2%9D%A4%EF%B8%8F%0A%0AP.S%20Early%20access%20also%20lets%20you%20earn%20Crypto%20Rewards%20%F0%9F%91%8B">
                                     <img src="/images/twitter.svg">
                                 </a>
-                                <a href="whatsapp://send?text=Wohoo 🎉 I’ve just registered for their invite-only ed-series/course on NEAR and a newly built platform for Learners 🥳 Come join in: theblockchainschool.io/Learn-and-Earn/NEAR/waitlist/<%=code%>
-                                
-                                P.S Early access also let’s you earn Crypto Rewards 🤑🚀" data-action="share/whatsapp/share" target="_blank"> 
+                                <a href="whatsapp://send?text=Hey there 👋
+                                Your friend just thought that you'd love to know about the things around blockchain space.
+                                TBCS is here to help you out✌.
+                                We at TBCS have been busy for months to curate what we love and what you all will love too😊.
+                                Join the waitlist to get the early access to Near's one of its kind ed-series. Yup!!! Its hapening🥳.
+                                Link🔗https://theblockchainschool.io/nearprogram/waitlist/<%=code%>
+                                P.S Early access lets you win rewards and incentives💸.
+                                It's open for everyone and we are really excited to onboard you on this journey💃🚀.
+                                So join the waitlist by filling the form and for more updates, stay tuned💫." data-action="share/whatsapp/share" target="_blank"> 
                                     <img src="/images/whatsapp.svg">
                                 </a>
                             </div>
@@ -130,7 +137,7 @@
             var aux = document.createElement("input");
 
             // Get the text from the element passed into the input
-            aux.setAttribute("value", document.getElementById("link-url").innerHTML);
+            aux.setAttribute("value", document.getElementById("link-url-hidden").innerHTML);
 
             // Append the aux input to the body
             document.body.appendChild(aux);

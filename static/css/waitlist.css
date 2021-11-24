@@ -481,7 +481,9 @@ select:focus {
 	font-size: 1rem;
 	padding-left: 1.5rem;
 }
-
+.link-url-hidden{
+	display: none;
+}
 .copy-btn {
 	display: flex;
 	justify-content: center;
@@ -499,8 +501,8 @@ select:focus {
 .copied-message {
 	display: none;
 	padding: 0.5rem 2rem;
-	position: absolute;
-	top: 1rem;
+	position: fixed;
+	top: 2rem;
 	background-color: rgb(168, 150, 245);
 	border-radius: 2px;
 	color: white;

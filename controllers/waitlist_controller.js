@@ -27,7 +27,7 @@ module.exports.registration = async function(req, res){
     let user = await Waitlist.findOne({email: req.body.email});
     if(!user){
         if(req.body['g-recaptcha-response'] === undefined || req.body['g-recaptcha-response'] === '' || req.body['g-recaptcha-response'] === null) {
-            return res.json({"responseCode" : 1,"responseDesc" : "Please select captcha"});
+            return res.redirect('back');
           }
           let secretKey = "6LcZNCsbAAAAADnNcU2FECVfV0LvYbvOuMPFBoDk";
     

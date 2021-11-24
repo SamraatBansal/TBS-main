@@ -4,7 +4,7 @@ const nodeMailer = require('../config/nodemailer');
 // this is another way of exporting a method
 exports.newRegistration = (user) => {
     let htmlString = nodeMailer.renderTemplate({user: user}, '/registration_mailer.ejs');
-    console.log(user);
+    // console.log(user);
     nodeMailer.transporter.sendMail({
        from: ' Saurabh | TBS <hello@theblockchainschool.io>',
        to: user.email,
@@ -16,7 +16,7 @@ exports.newRegistration = (user) => {
             return;
         }
 
-        console.log('Message sent', info);
+        // console.log('Message sent', info);
         return;
     });
 }
