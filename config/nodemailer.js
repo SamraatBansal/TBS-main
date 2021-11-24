@@ -3,7 +3,9 @@ const nodemailer = require("nodemailer");
 const ejs = require('ejs');
 const path = require('path');
 const env = require('./environment.js');
-const nodemailerSendgrid = require('nodemailer-sendgrid');
+// const nodemailerSendgrid = require('nodemailer-sendgrid');
+// const SENDGRID_API_KEY =  env.sendgrid_api_key;
+var sendinBlue = require('nodemailer-sendinblue-transport');
 
 // // const CLIENT_ID = '687534517594-ule5med3e28m5gj1rsnhj5mfrecnscog.apps.googleusercontent.com';
 // const CLIENT_ID = env.google_client_id;
@@ -15,16 +17,26 @@ const nodemailerSendgrid = require('nodemailer-sendgrid');
 
 // const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
 // oAuth2Client.setCredentials({refresh_token: REFRESH_TOKEN});
-const SENDGRID_API_KEY =  env.sendgrid_api_key;
+
+// const SENDGRID_API_KEY =  env.sendgrid_api_key;
+
+
+// let transporter = nodemailer.createTransport(
+//     nodemailerSendgrid({
+//         apiKey: SENDGRID_API_KEY
+
+//     })
+// );
 
 
 let transporter = nodemailer.createTransport(
-    nodemailerSendgrid({
-        apiKey: SENDGRID_API_KEY
+    sendinBlue({
 
-    })
+        apiKey: 'MRBk30QYZnKELPqJ'
+    }
+    )
+    
 );
-
 
 let renderTemplate = (data, relativePath) => {
     let mailHTML;

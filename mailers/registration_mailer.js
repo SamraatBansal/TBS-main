@@ -16,7 +16,7 @@ exports.newRegistration = (user) => {
             return;
         }
 
-        // console.log('Message sent', info);
+        console.log('Message sent', info);
         return;
     });
 }

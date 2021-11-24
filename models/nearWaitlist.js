@@ -5,7 +5,7 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 
 
-const waitlistSchema = new mongoose.Schema({
+const nearWaitlistSchema = new mongoose.Schema({
     email:{
         type: String,
         required: true,
@@ -27,16 +27,20 @@ const waitlistSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    polygonKnowledge:{
+    heardAboutNear:{
         type: String,
         required: true
     },
     referrals:[
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'Waitlist'
+            ref: 'NearWaitlist'
         }
     ],
+    referrerID:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'NearWaitlist'
+    },
     referralCode:{
         type: String
     }   
@@ -45,6 +49,6 @@ const waitlistSchema = new mongoose.Schema({
     });
 
 
-const Waitlist = mongoose.model('Waitlist', waitlistSchema);
+const NearWaitlist = mongoose.model('NearWaitlist', nearWaitlistSchema);
 
-module.exports = Waitlist;
+module.exports = NearWaitlist;

@@ -82,18 +82,18 @@
                     <option value="Employed in Non-tech Field">Employed in Non-tech Field</option>
                 </select>
 
-                <label style="margin-top:1rem" for="polygon-knowledge">Do you have knowledge of Polygon (previously Matic) apart from being an investment option?</label>
-                <select name="polygonKnowledge" id="polygon-knowledge" required>
+                <label style="margin-top:1rem" for="polygon-knowledge">Have you heard about "NEAR" before?</label>
+                <select name="heardAboutNear" id="polygon-knowledge" required>
                     <option value="" disabled selected required>Select an option from the dropdown</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
 
                 <%if(code){%>
-                    <label for="referral-code">Enter the 8-digit referral code (if any)</label>
+                    <label for="referral-code">Enter the 9-digit referral code (if any)</label>
                     <input style="background-color: rgb(238, 238, 238);" name="referrer" id="referral-code" type="text" value="<%=code%>" readonly>
                 <%}else{%>  
-                    <label for="referral-code">Enter the 8-digit referral code (if any)</label>
+                    <label for="referral-code">Enter the 9-digit referral code (if any)</label>
                     <input name="referrer" id="referral-code" placeholder="TBS-$NEAR" type="text">
                 <%}%>
                 <!-- <input name="reset-email" id="reset-email" type="email" required> -->
