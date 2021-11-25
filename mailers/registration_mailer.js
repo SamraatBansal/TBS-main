@@ -6,7 +6,7 @@ exports.newRegistration = (user) => {
     let htmlString = nodeMailer.renderTemplate({user: user}, '/registration_mailer.ejs');
     // console.log(user);
     nodeMailer.transporter.sendMail({
-       from: ' Saurabh | TBS <hello@theblockchainschool.io>',
+       from: ' Saurabh from TBCS <hello@theblockchainschool.io>',
        to: user.email,
        subject: "Registration Successful",
        html: htmlString
