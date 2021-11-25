@@ -1549,7 +1549,7 @@ p {
 
   .body {
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
