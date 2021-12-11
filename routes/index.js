@@ -16,11 +16,12 @@ router.get('/resources', resourceController.resources);
 // router.get('/referral/:code', waitlistController.referral);
 
 
-router.get('/nearprogram', waitlistController.landing);
+router.get('/nearprogram', waitlistController.landingNear);
+router.get('/tezosprogram', waitlistController.landingTezos);
 
 // Waitlist
-router.get('/nearprogram/waitlist/:code', waitlistController.waitlist);
-router.get('/nearprogram/waitlist', waitlistController.waitlist);
+router.get('/tezosprogram/waitlist/:code', waitlistController.waitlist);
+router.get('/tezosprogram/waitlist', waitlistController.waitlist);
 router.post('/waitlist-form/registration', waitlistController.registration )
 
 // router.post('/waitlist-from/registration/:code', waitlistController.referralRegistration)

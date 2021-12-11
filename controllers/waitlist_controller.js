@@ -1,4 +1,4 @@
-const Waitlist = require('../models/nearWaitlist')
+const Waitlist = require('../models/tezosWaitlist')
 const randomString = require('randomstring')
 
 const queue = require('../config/kue');
@@ -7,7 +7,15 @@ const emailVerificationWorker = require('../workers/registration_worker');
 const request = require("request")
 
 
-module.exports.landing = function(req, res){
+module.exports.landingTezos = function(req, res){
+    
+    return res.render('landing_tezos',{
+        title: "TEZOS | The Blockchain School", 
+        // code: req.params.code
+    })
+}
+
+module.exports.landingNear = function(req, res){
     
     return res.render('landing_near',{
         title: "NEAR | The Blockchain School", 
