@@ -8,7 +8,7 @@ exports.newRegistration = (user) => {
     nodeMailer.transporter.sendMail({
        from: ' Saurabh from TBCS <hello@theblockchainschool.io>',
        to: user.email,
-       subject: "Response Waitlisted for Tezos 101, Successfully!",
+       subject: "Response Successfully Recorded!, for Tezos 101 ✨",
        html: htmlString
     }, (err, info) => {
         if (err){
