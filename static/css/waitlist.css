@@ -41,8 +41,8 @@ body {
 }
 
 .index-body {
-	/* background-color: blue; */
-	background: url("../images/waitlist-bg.svg");
+	background-color: ##E6007A;
+/* 	background: url("../images/waitlist-bg.svg"); */
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
