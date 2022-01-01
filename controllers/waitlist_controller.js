@@ -1,4 +1,4 @@
-const Waitlist = require('../models/tezosWaitlist')
+const Waitlist = require('../models/polkadotWaitlist')
 const randomString = require('randomstring')
 
 const queue = require('../config/kue');
@@ -6,6 +6,13 @@ const emailMailer = require('../mailers/registration_mailer');
 const emailVerificationWorker = require('../workers/registration_worker');
 const request = require("request")
 
+module.exports.landingPolkadot = function(req, res){
+    
+    return res.render('landing_polkadot',{
+        title: "DOT | The Blockchain School", 
+        // code: req.params.code
+    })
+}
 
 module.exports.landingTezos = function(req, res){
     

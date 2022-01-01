@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="/css/profile.css">
     <link rel="stylesheet" type="text/css" href="/css/waitlist.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <style>
+        footer{
+            background-color: #10011d;
+        }
+    </style>
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
@@ -35,15 +40,15 @@
 
             <div class="promo-text-container">
                 <!-- <h1 class="text-head">Polygon x The Blockchain School</h1> -->
-                <img class="top-img" src="/images/new-top.svg" alt="">   
-                <img class="top-img-2" src="/images/new-top-2.svg" alt="">   
+                <img class="top-img" src="/images/new-top.png" alt="">   
+                <img class="top-img-2" src="/images/new-top-2.png" alt="">   
 
-                <p style="font-size: 1.5rem; font-weight: 600; color:#f3e6ff">Here's a brand new course on - Get started w/ Tezos Ecosystem.</p>
-                <p>It's Invite-only (for now) & we are excited to onboard you on this journey of #Road2Tezos 🤩🚀
-                    <br>Join the waitlist to be one of the first to access - Tezos one of its kind ed-series + our first ever physical event for NFT collection launch.
+                <p style="font-size: 1.5rem; font-weight: 600; color:#f3e6ff">Here's a brand new course on - Get started w/ Polkadot Ecosystem.</p>
+                <p>It's Invite-only (for now) & we are excited to onboard you on this journey of #Straight2Substrate 🤩🚀
+                    <br>Join the waitlist to be one of the first to access - Polkadot one of its kind ed-series to Master Substrate and Polkadot
                 </p>
 
-                <p style="font-size: 1.25rem; font-weight: 500; color:#f3e6ff">P.S Early access gets you higher chance to win our Exclusive NFTs 🤑</p>
+                <p style="font-size: 1.25rem; font-weight: 500; color:#f3e6ff">P.S Early access gets you higher chance to win our Exclusive Rewards 🤑</p>
 
             </div>
             <form class="input-container" id="enter-email" action="/waitlist-form/registration" method="POST" > 
@@ -83,8 +88,8 @@
                     <option value="non-developer">I am a non-developer</option>
                 </select>
 
-                <label for="Tezos-knowledge">Do you have knowledge of Tezos?</label>
-                <select name="knowledgeOfTezos" id="Tezos-knowledge" required>
+                <label for="Polkadot-knowledge">Do you have knowledge of Polkadot?</label>
+                <select name="knowledgeOfPolkadot" id="Polkadot-knowledge" required>
                     <option value="" disabled selected required>Select an option from the dropdown</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
@@ -95,7 +100,7 @@
                     <input style="background-color: rgb(238, 238, 238);" name="referrer" id="referral-code" type="text" value="<%=code%>" readonly>
                 <%}else{%>  
                     <label for="referral-code">Enter the 9-digit referral code (if any)</label>
-                    <input name="referrer" id="referral-code" placeholder="TBCS-TEZOS" type="text">
+                    <input name="referrer" id="referral-code" placeholder="TBCS-POLKA" type="text">
                 <%}%>
                 <!-- <input name="reset-email" id="reset-email" type="email" required> -->
 

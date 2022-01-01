@@ -42,7 +42,7 @@ body {
 
 .index-body {
 	/* background-color: blue; */
-	background: url("../images/bg.svg");
+	background: url("../images/waitlist-bg.svg");
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

@@ -8,7 +8,7 @@ exports.newRegistration = (user) => {
     nodeMailer.transporter.sendMail({
        from: ' Saurabh from TBCS <hello@theblockchainschool.io>',
        to: user.email,
-       subject: "Response Recorded Successfully for Tezos 101!",
+       subject: " Look Who’s Vibing With Substrate: Confirmation Email",
        html: htmlString
     }, (err, info) => {
         if (err){

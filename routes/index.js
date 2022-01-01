@@ -18,10 +18,11 @@ router.get('/resources', resourceController.resources);
 
 router.get('/nearprogram', waitlistController.landingNear);
 router.get('/tezosprogram', waitlistController.landingTezos);
+router.get('/polkadotprogram', waitlistController.landingPolkadot);
 
 // Waitlist
-router.get('/tezosprogram/waitlist/:code', waitlistController.waitlist);
-router.get('/tezosprogram/waitlist', waitlistController.waitlist);
+router.get('/polkadotprogram/waitlist/:code', waitlistController.waitlist);
+router.get('/polkadotprogram/waitlist', waitlistController.waitlist);
 router.post('/waitlist-form/registration', waitlistController.registration )
 
 // router.post('/waitlist-from/registration/:code', waitlistController.referralRegistration)
